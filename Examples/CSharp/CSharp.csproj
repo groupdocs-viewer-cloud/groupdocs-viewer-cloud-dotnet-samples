@@ -58,29 +58,79 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Common.cs" />
+    <Compile Include="Document_Information\Create_CAD_Layers_Cache_HTML.cs" />
+    <Compile Include="Document_Information\Create_CAD_Layers_Cache_Image.cs" />
+    <Compile Include="Document_Information\Get_CAD_DocumentInfo_Html.cs" />
+    <Compile Include="Document_Information\Get_CAD_DocumentInfo_Image.cs" />
+    <Compile Include="Document_Information\Get_DocumentInfo_From_Request_Html.cs" />
+    <Compile Include="Document_Information\Get_DocumentInfo_From_Request_Image.cs" />
+    <Compile Include="Document_Information\Get_DocumentInfo_Html.cs" />
+    <Compile Include="Document_Information\Get_DocumentInfo_Image.cs" />
+    <Compile Include="Document_Information\Get_DocumentInfo_URL_HTML.cs" />
+    <Compile Include="Document_Information\Get_DocumentInfo_with_Options_HTML.cs" />
+    <Compile Include="Document_Information\Get_DocumentInfo_with_Options_Image.cs" />
+    <Compile Include="Document_Information\Get_DocumentInfo_with_Options_URL_HTML.cs" />
+    <Compile Include="Document_Information\Get_DocumentInfo_with_Options_URL_Image.cs" />
     <Compile Include="Fonts_Resource\Delete_Font_Cache.cs" />
     <Compile Include="Fonts_Resource\Font_Resoruces.cs" />
     <Compile Include="Page_Resources\Get_Responsive_HTML.cs" />
+    <Compile Include="PDF_Rendering\Create_Pdf_File_from_Url_HTML.cs" />
+    <Compile Include="PDF_Rendering\Create_Pdf_File_from_Url_Image.cs" />
+    <Compile Include="PDF_Rendering\Create_Pdf_File_Request_HTML.cs" />
+    <Compile Include="PDF_Rendering\Create_Pdf_File_Request_Image.cs" />
+    <Compile Include="PDF_Rendering\Get_Pdf_File_from_Url_HTML.cs" />
+    <Compile Include="PDF_Rendering\Get_Pdf_File_from_Url_Image.cs" />
+    <Compile Include="PDF_Rendering\Get_Pdf_File_HTML.cs" />
+    <Compile Include="PDF_Rendering\Get_Pdf_File_Image.cs" />
+    <Compile Include="PDF_Rendering\Get_Watermark_Pdf_File_Image.cs" />
+    <Compile Include="PDF_Rendering\Get_Watermark_Pdf_File_HTML.cs" />
     <Compile Include="Supported_File_Formats\Get_All_Supported_Formats.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RunExamples.cs" />
+    <Compile Include="Working_With_Attachments\Attachments\Get_Attachments_Html.cs" />
+    <Compile Include="Working_With_Attachments\Attachments\Get_Attachments_Image.cs" />
+    <Compile Include="Working_With_Attachments\Attachments\Get_Attachment_From_Email_Html.cs" />
+    <Compile Include="Working_With_Attachments\Attachments\Get_Attachment_From_Email_Image.cs" />
+    <Compile Include="Working_With_Attachments\Attachment_Information\Get_Attachment_Info_Html.cs" />
+    <Compile Include="Working_With_Attachments\Attachment_Information\Get_Attachment_Info_Image.cs" />
+    <Compile Include="Working_With_Attachments\Attachment_Information\Get_Attachment_Info_WithOptions_Html.cs" />
+    <Compile Include="Working_With_Attachments\Attachment_Information\Get_Attachment_Info_WithOptions_Image.cs" />
+    <Compile Include="Working_With_Attachments\Attachment_Pages\Create_Attachment_Pages_Cache_Html.cs" />
+    <Compile Include="Working_With_Attachments\Attachment_Pages\Create_Attachment_Pages_Cache_Image.cs" />
+    <Compile Include="Working_With_Attachments\Attachment_Pages\Delete_Attachment_Pages_Cache_Html.cs" />
+    <Compile Include="Working_With_Attachments\Attachment_Pages\Delete_Attachment_Pages_Cache_Image.cs" />
+    <Compile Include="Working_With_Attachments\Attachment_Pages\Get_Attachment_Pages_Html.cs" />
+    <Compile Include="Working_With_Attachments\Attachment_Pages\Get_Attachment_Pages_Image.cs" />
+    <Compile Include="Working_With_Attachments\Attachment_Pages\Get_Attachment_Pages_ZIP_Html.cs" />
+    <Compile Include="Working_With_Attachments\Attachment_Pages\Get_Attachment_Pages_ZIP_Image.cs" />
+    <Compile Include="Working_With_Attachments\Attachment_Pages\Get_Attachment_Page_Html.cs" />
+    <Compile Include="Working_With_Attachments\Attachment_Pages\Get_Attachment_Page_Image.cs" />
+    <Compile Include="Working_With_Attachments\Attachment_Page_Resources\Get_Attachment_Page_Resource_Html.cs" />
+    <Compile Include="Working_With_Document_Pages\Minification_Of_HTML_And_SVG\Create_Pages_Cache_Minified_HTML.cs" />
+    <Compile Include="Working_With_Document_Pages\Rendering_Document_Pages\Create_Document_Cache_HTML.cs" />
+    <Compile Include="Working_With_Document_Pages\Rendering_Document_Pages\Create_Document_Cache_Image.cs" />
+    <Compile Include="Working_With_Document_Pages\Rendering_Document_Pages\Create_Document_Cache_Url_With_HTMLOptions.cs" />
+    <Compile Include="Working_With_Document_Pages\Rendering_Document_Pages\Create_Document_Cache_Url_With_ImageOptions.cs" />
+    <Compile Include="Working_With_Document_Pages\Rendering_Document_Pages\Create_Pages_Cache_Request_HTML.cs" />
+    <Compile Include="Working_With_Document_Pages\Rendering_Document_Pages\Create_Pages_Cache_Request_Image.cs" />
+    <Compile Include="Working_With_Document_Pages\Rendering_Document_Pages\Create_Project_Page_Cache_HTML.cs" />
+    <Compile Include="Working_With_Document_Pages\Rendering_Document_Pages\Create_Project_Page_Cache_Image.cs" />
+    <Compile Include="Working_With_Document_Pages\Rendering_Document_Pages\Download_Document_Page_HTML.cs" />
+    <Compile Include="Working_With_Document_Pages\Rendering_Document_Pages\Download_Document_Page_Image.cs" />
+    <Compile Include="Working_With_Document_Pages\Rendering_Document_Pages\Exclude_Fonts.cs" />
+    <Compile Include="Working_With_Document_Pages\Rendering_Document_Pages\Get_Pages_HTML.cs" />
+    <Compile Include="Working_With_Document_Pages\Rendering_Document_Pages\Get_Pages_Image.cs" />
+    <Compile Include="Working_With_Document_Pages\Rendering_Document_Pages\Get_Pages_URL_HTML.cs" />
+    <Compile Include="Working_With_Document_Pages\Rendering_Document_Pages\Get_Pages_URL_Image.cs" />
+    <Compile Include="Working_With_Document_Pages\Rendering_Document_To_Responsive_HTML\Get_Responsive_HTML_Options.cs" />
+    <Compile Include="Working_With_Document_Pages\Rendering_Email_Pages\Render_Email_Header.cs" />
+    <Compile Include="Working_With_Document_Pages\Rendering_Email_Pages\Render_Email_Image_PageSize.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Document_Information\" />
-    <Folder Include="PDF_Rendering\" />
-    <Folder Include="Working_With_Attachments\Attachments\" />
-    <Folder Include="Working_With_Attachments\Attachment_Information\" />
-    <Folder Include="Working_With_Attachments\Attachment_Pages\" />
-    <Folder Include="Working_With_Attachments\Attachment_Page_Resources\" />
-    <Folder Include="Working_With_Document_Pages\Minification_Of_HTML_And_SVG\" />
-    <Folder Include="Working_With_Document_Pages\Rendering_Document_Pages\" />
-    <Folder Include="Working_With_Document_Pages\Rendering_Document_To_Responsive_HTML\" />
-    <Folder Include="Working_With_Document_Pages\Rendering_Email_Pages\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
   </Target>
