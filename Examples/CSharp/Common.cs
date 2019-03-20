@@ -1,7 +1,7 @@
-﻿using Aspose.Storage.Cloud.Sdk;
-using Aspose.Storage.Cloud.Sdk.Api;
-using System.IO;
+﻿using System.IO;
 using System;
+using GroupDocs.Viewer.Cloud.Sdk.Client;
+using GroupDocs.Viewer.Cloud.Sdk.Api;
 
 namespace GroupDocs.Viewer.Cloud.Examples.CSharp
 {
@@ -9,17 +9,16 @@ namespace GroupDocs.Viewer.Cloud.Examples.CSharp
 	{
 		public static string MyAppSid = Common.MyAppSid;
 		public static string MyAppKey = Common.MyAppKey;
+		public static string MyStorage = Common.MyStorage;
 
 		public static void UploadSampleTestFiles()
 		{
-			var storageConfig = new Configuration
-			{
-				AppSid = MyAppSid,
-				AppKey = MyAppKey,
-				ApiBaseUrl = "https://api.groupdocs.cloud"
-			};
+			var storageConfig = new Configuration(MyAppSid, MyAppKey);
 
 			StorageApi storageApi = new StorageApi(storageConfig);
+			FolderApi folderApi = new FolderApi(storageConfig);
+			FileApi fileApi = new FileApi(storageConfig);
+
 			var path = "..\\..\\..\\Data";
 
 			Console.WriteLine("File Upload Processing...");
@@ -28,10 +27,11 @@ namespace GroupDocs.Viewer.Cloud.Examples.CSharp
 			foreach (var dir in dirs)
 			{
 				var relativeDirPath = dir.Replace(path, string.Empty).Trim(Path.DirectorySeparatorChar);
-
-				var response = storageApi.GetIsExist(new Aspose.Storage.Cloud.Sdk.Model.Requests.GetIsExistRequest() { Path = relativeDirPath });
-				if (!response.FileExist.IsExist.Value)
-					storageApi.PutCreateFolder(new Aspose.Storage.Cloud.Sdk.Model.Requests.PutCreateFolderRequest() { Path = relativeDirPath });
+				var response = storageApi.ObjectExists(new Sdk.Model.Requests.ObjectExistsRequest(relativeDirPath, MyStorage));
+				if (!response.Exists.Value)
+				{
+					folderApi.CreateFolder(new Sdk.Model.Requests.CreateFolderRequest(relativeDirPath, MyStorage));
+				}
 			}
 
 			var files = Directory.GetFiles(path, "*", SearchOption.AllDirectories);
@@ -39,14 +39,14 @@ namespace GroupDocs.Viewer.Cloud.Examples.CSharp
 			{
 				var relativeFilePath = file.Replace(path, string.Empty).Trim(Path.DirectorySeparatorChar);
 
-				var response = storageApi.GetIsExist(new Aspose.Storage.Cloud.Sdk.Model.Requests.GetIsExistRequest() { Path = relativeFilePath });
-				if (!response.FileExist.IsExist.Value)
+				var response = storageApi.ObjectExists(new Sdk.Model.Requests.ObjectExistsRequest(relativeFilePath, MyStorage));
+				if (!response.Exists.Value)
 				{
 					var fileName = Path.GetFileName(file);
 					var relativeDirPath = relativeFilePath.Replace(fileName, string.Empty).Trim(Path.DirectorySeparatorChar);
 					var fileStream = File.Open(file, FileMode.Open);
 
-					storageApi.PutCreate(new Aspose.Storage.Cloud.Sdk.Model.Requests.PutCreateRequest() { File = fileStream, Path = relativeDirPath });
+					fileApi.UploadFile(new Sdk.Model.Requests.UploadFileRequest(relativeFilePath, fileStream, MyStorage));
 					fileStream.Close();
 				}
 			}

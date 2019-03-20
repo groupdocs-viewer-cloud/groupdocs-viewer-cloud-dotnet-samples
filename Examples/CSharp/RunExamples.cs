@@ -12,282 +12,148 @@ namespace GroupDocs.Viewer.Cloud.Examples.CSharp
 
 			//TODO: Get your AppSID and AppKey at https://dashboard.groupdocs.cloud (free registration is required).
 			Common.MyAppSid = "XXXXX-XXXXX-XXXXX";
-			Common.MyAppKey = "XXXXXX";
+			Common.MyAppKey = "XXXXXXXXXXX";
+			Common.MyStorage = "MyStorage";
 
-			// 
-			//// Working with Common
+			// Uploading sample test files from local to storage under folder 'viewerdocs'
+			//Common.UploadSampleTestFiles();
+
+			//// ***********************************************************
+			///// ***** WORKING WITH STORAGE *****
+			//// ***********************************************************
+
+			// Is Storage Exist
+			//Storage_Exist.Run();
+
+			// Get Get Disc Usage
+			//Get_Disc_Usage.Run();
+
+			// Get File Versions
+			//Get_File_Versions.Run();
+
+			// Is Object Exists
+			//Object_Exists.Run();
 
 
-			// Uploading sample test files from local to default storage under folder 'viewerdocs'
-			Common.UploadSampleTestFiles();
+			//// ***********************************************************
+			//// ***** WORKING WITH FOLDER *****
+			//// ***********************************************************
 
-			// 
-			//// Working with Supported Formats
+			// Create Folder
+			//Create_Folder.Run();
 
+			// Copy Folder
+			//Copy_Folder.Run();
+
+			// Move Folder
+			//Move_Folder.Run();
+
+			// Delete Folder
+			//Delete_Folder.Run();
+
+			// Get Files List
+			//Get_Files_List.Run();
+
+
+			//// ***********************************************************
+			//// ***** WORKING WITH FILES *****
+			//// ***********************************************************
+
+			// Upload File
+			//Upload_File.Run();
+
+			// Copy File
+			//Copy_File.Run();
+
+			// Move File
+			//Move_File.Run();
+
+			// Delete File
+			//Delete_File.Run();
+
+			// Download_File
+			//Download_File.Run();
+
+
+			//// ***********************************************************
+			//// ***** WORKING WITH SUPPORTED FORMATS *****
+			//// ***********************************************************
 
 			// Get All Supported Formats
 			Get_All_Supported_Formats.Run();
 
-			// 
-			//// Working with Fonts
 
+			//// ***********************************************************
+			//// ***** WORKING WITH VIEW *****
+			//// ***********************************************************
 
-			// Delete All Fonts Cache
-			Delete_Font_Cache.Run();
+			// Create View With Minimal & Default ViewFormat & ViewOptions
+			//Create_View_With_Minimal_ViewOptions.Run();
 
-			// Get All Fonts Resources
-			Font_Resoruces.Run();
+			// Create View With HTML View Format
+			//Create_View_With_HTML_View_Format.Run();
 
+			// Create View With Image View Format
+			//Create_View_With_Image_View_Format.Run(Sdk.Model.ViewOptions.ViewFormatEnum.JPG);
 
-			// 
-			//// Working with Page Resources
+			// Create View With Render Hidden Pages
+			//Create_View_With_Render_Hidden_Pages.Run();
 
+			// Create View With Spreadsheet Options
+			//Create_View_With_SpreadsheetOptions.Run();
 
-			// Get Responsive HTML
-			Get_Responsive_HTML.Run();
+			// Create View With Spreadsheet Render Hidden Rows
+			//Create_View_With_Spreadsheet_Render_Hidden_Rows_Option.Run();
 
-			// 
-			//// Working with Document Information
+			// Create View With Spreadsheet Options
+			//Create_View_With_SpreadsheetOptions.Run();
 
+			// Create View With Project Options
+			//Create_View_With_Project_Options.Run();
 
-			// Create CAD Layers Cache HTML
-			Create_CAD_Layers_Cache_HTML.Run();
+			// Create View With Fonts Path Options
+			//Create_View_With_Fonts_Path_Options.Run();
 
-			// Create CAD Layers Cache Image
-			Create_CAD_Layers_Cache_Image.Run();
+			// Create View With Start Page & To Count Pages
+			//Create_View_With_StartPage_And_CountPages.Run();
 
-			// Get CAD Document Information Html
-			Get_CAD_DocumentInfo_Html.Run();
+			// Create View With HTML ViewOptions
+			//Create_View_With_HTML_ViewOptions.Run();
 
-			// Get CAD Document Information Image
-			Get_CAD_DocumentInfo_Image.Run();
+			// Delete View With Default ViewFormat
+			//Delete_View_With_Default_ViewFormat.Run();
 
-			// Get Document Infomation From Request Html
-			Get_DocumentInfo_From_Request_Html.Run();
 
-			// Get Document Infomation From Request Image
-			Get_DocumentInfo_From_Request_Image.Run();
+			//// ***********************************************************
+			/////// ***** WORKING WITH DOCUMENT INFORMATION *****
+			//// ***********************************************************
 
-			// Get Document Information Html
-			Get_DocumentInfo_Html.Run();
+			// Get Document Information With Minimal ViewOptions
+			//Get_Info_With_Minimal_ViewOptions.Run();
 
-			// Get Document Information Image
-			Get_DocumentInfo_Image.Run();
+			// Get Document Information With HTML View Format
+			//Get_Info_With_HTML_View_Format.Run();
 
-			// Get DocumentInformation URL HTML
-			Get_DocumentInfo_URL_HTML.Run();
+			// Get Document Information With Image View Format
+			//Get_Info_With_Image_View_Format.Run(Sdk.Model.ViewOptions.ViewFormatEnum.PNG);
 
-			// Get Document Information with Options HTML
-			Get_DocumentInfo_with_Options_HTML.Run();
+			// Get Document Information With Render Hidden Pages
+			//Get_Info_With_Render_Hidden_Pages.Run();
 
-			// Get Document Information with Options Image
-			Get_DocumentInfo_with_Options_Image.Run();
+			// Get Document Information With Spreadsheet Options
+			//Get_Info_With_SpreadsheetOptions.Run();
 
-			// Get Document Information with Options URL HTML
-			Get_DocumentInfo_with_Options_URL_HTML.Run();
+			// Get Document Information With Spreadsheet Render Hidden Rows
+			//Get_Info_With_Spreadsheet_Render_Hidden_Rows_Option.Run();
 
-			// Get Document Information with Options URL Image
-			Get_DocumentInfo_with_Options_URL_Image.Run();
+			// Get Document Information With CAD Options
+			//Get_Info_With_CAD_Options.Run();
 
-			// 
-			//// Working with PDF Rendering
+			// Get Document Information With Project Options
+			//Get_Info_With_Project_Options.Run();
 
-
-			// Create PDF File from Url HTML
-			Create_Pdf_File_from_Url_HTML.Run();
-
-			// Create PDF File from Url Image
-			Create_Pdf_File_from_Url_Image.Run();
-
-			// Create PDF File Request HTML
-			Create_Pdf_File_Request_HTML.Run();
-
-			// Create PDF File Request Image
-			Create_Pdf_File_Request_Image.Run();
-
-			// Create PDF File from URL HTML
-			Get_Pdf_File_from_Url_HTML.Run();
-
-			// Create PDF File from URL Image
-			Get_Pdf_File_from_Url_Image.Run();
-
-			// Get PDF File HTML
-			Get_Pdf_File_HTML.Run();
-
-			// Get PDF File Image
-			Get_Pdf_File_Image.Run();
-
-			// Get PDF File with Watermark HTML
-			Get_Watermark_Pdf_File_HTML.Run();
-
-			// Get PDF File with Watermark Image
-			Get_Watermark_Pdf_File_Image.Run();
-
-			// 
-			////// Working with Document Pages
-
-
-			// Create Pages Cache Minified HTML
-			Create_Pages_Cache_Minified_HTML.Run();
-
-			// Get Responsive HTML with Options
-			Get_Responsive_HTML_Options.Run();
-
-			// Render Email Header
-			Render_Email_Header.Run();
-
-			// Render Email Image PageSize
-			Render_Email_Image_PageSize.Run();
-
-			// Get Attachment Informmation Html
-			Get_Attachment_Info_Html.Run();
-
-			// Get Attachment Informmation Image
-			Get_Attachment_Info_Image.Run();
-
-			// Get Attachment Information With Options HTML
-			Get_Attachment_Info_WithOptions_HTML.Run();
-
-			// Get Attachment Information With Options Image
-			Get_Attachment_Info_WithOptions_Image.Run();
-
-			// Get Attachment Page Resource Html
-			Get_Attachment_Page_Resource_Html.Run();
-
-			// Get Attachment from Email Html
-			Get_Attachment_From_Email_Html.Run();
-
-			// Get Attachment from Email Image
-			Get_Attachment_From_Email_Image.Run();
-
-			// Get Attachmenst Html
-			Get_Attachments_Html.Run();
-
-			// Get Attachmenst Image
-			Get_Attachments_Image.Run();
-
-			// Create Attachment Pages Cache Html
-			Create_Attachment_Pages_Cache_Html.Run();
-
-			// Create Attachment Pages Cache Image
-			Create_Attachment_Pages_Cache_Image.Run();
-
-			// Delete Attachment Pages Cache HTML
-			Delete_Attachment_Pages_Cache_Html.Run();
-
-			// Delete Attachment Pages Cache Image
-			Delete_Attachment_Pages_Cache_Image.Run();
-
-			// Get Attachment Page Html
-			Get_Attachment_Page_Html.Run();
-
-			// Get Attachment Page Image
-			Get_Attachment_Page_Image.Run();
-
-			// Get Attachment Pages Html
-			Get_Attachment_Pages_Html.Run();
-
-			// Get Attachment Pages Image
-			Get_Attachment_Pages_Image.Run();
-
-			// Get Attachment Pages Zip Html
-			Get_Attachment_Pages_ZIP_Html.Run();
-
-			// Get Attachment Pages Zip Image
-			Get_Attachment_Pages_ZIP_Image.Run();
-
-			// Create Document Cache HTML
-			Create_Document_Cache_HTML.Run();
-
-			// Create Document Cache Image
-			Create_Document_Cache_Image.Run();
-
-			// Create Document Cache URL with HTML Options
-			Create_Document_Cache_Url_With_HTMLOptions.Run();
-
-			// Create Document Cache URL with Image Options
-			Create_Document_Cache_Url_With_ImageLOptions.Run();
-
-			// Create Pages Cache Request HTML
-			Create_Pages_Cache_Request_HTML.Run();
-
-			// Create Pages Cache Request Image
-			Create_Pages_Cache_Request_Image.Run();
-
-			// Create Project Page Cache HTML
-			Create_Project_Page_Cache_HTML.Run();
-
-			// Create Project Page Cache Image
-			Create_Project_Page_Cache_Image.Run();
-
-			// Download Document Page HTML
-			Download_Document_Page_HTML.Run();
-
-			// Download Document Page Image
-			Download_Document_Page_Image.Run();
-
-			// Exclude Fonts from Pages
-			Exclude_Fonts.Run();
-
-			// Get Pages HTML
-			Get_Pages_HTML.Run();
-
-			// Get Pages Image
-			Get_Pages_Image.Run();
-
-			// Get Pages from URL HTML
-			Get_Pages_URL_HTML.Run();
-
-			// Get Pages from URL Image
-			Get_Pages_URL_Image.Run();
-
-			// Get ZIP With Pages HTML
-			Get_ZIP_With_Pages_HTML.Run();
-
-			// Get ZIP With Pages Image
-			Get_ZIP_With_Pages_Image.Run();
-
-			// Get Page Resoruces HTML
-			Page_Resoruces_API_HTML.Run();
-
-			// Remove Document Cache for HTML & Image
-			Remove_Document_Cache_for_HTML_Image.Run();
-
-			// Remove Document Cache for Pages
-			Remove_Document_Cache_for_HTML_Pages.Run();
-
-			// Render CAD Tiles
-			Render_CAD_Tiles.Run();
-
-			// Render Email PDF
-			Render_Email_PDF.Run();
-
-			// Render Hidden Rows
-			Render_Hidden_Rows.Run();
-
-			// Render PDF Default Fonts
-			Render_PDF_DefaultFont.Run();
-
-			// Render Print Area Only
-			Render_PrintArea_Only.Run();
-
-			// Render Page HTML
-			Reorder_Page_HTML.Run();
-
-			// Render Page Image
-			Reorder_Page_Image.Run();
-
-			// Rotate Page HTML
-			Rotate_Page_HTML.Run();
-
-			// Rotate Page Image
-			Rotate_Page_Image.Run();
-
-			// Set Image Quality
-			Set_image_quality.Run();
-
-			// Text Overflow Mode Auto Fit to Column
-			Text_Overflow_Mode.Run();
+			// Get Document Information With Image View Options
+			//Get_Info_With_Image_View_Options_Options.Run();
 		}
 	}
 }
