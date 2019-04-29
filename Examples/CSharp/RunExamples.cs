@@ -12,8 +12,8 @@ namespace GroupDocs.Viewer.Cloud.Examples.CSharp
 
 			//TODO: Get your AppSID and AppKey at https://dashboard.groupdocs.cloud (free registration is required).
 			Common.MyAppSid = "XXXXX-XXXXX-XXXXX";
-			Common.MyAppKey = "XXXXXXXXXXX";
-			Common.MyStorage = "MyStorage";
+			Common.MyAppKey = "XXXXXXXXXX";
+			Common.MyStorage = "XXXXX";
 
 			// Uploading sample test files from local to storage under folder 'viewerdocs'
 			//Common.UploadSampleTestFiles();
@@ -123,6 +123,11 @@ namespace GroupDocs.Viewer.Cloud.Examples.CSharp
 			// Delete View With Default ViewFormat
 			//Delete_View_With_Default_ViewFormat.Run();
 
+			// Create View With Responsive HTML & ViewOptions
+			//Create_View_With_Responsive_HTML.Run();
+
+			// Create View With Output Path & ViewOptions
+			//Create_View_With_OutputPath.Run();
 
 			//// ***********************************************************
 			/////// ***** WORKING WITH DOCUMENT INFORMATION *****

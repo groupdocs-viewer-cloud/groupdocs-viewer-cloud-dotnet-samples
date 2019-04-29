@@ -38,8 +38,8 @@
     <StartupObject>GroupDocs.Viewer.Cloud.Examples.CSharp.RunExamples</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="GroupDocs.Viewer.Cloud.Sdk, Version=19.3.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\GroupDocs.Viewer-Cloud.19.3.0\lib\net20\GroupDocs.Viewer.Cloud.Sdk.dll</HintPath>
+    <Reference Include="GroupDocs.Viewer.Cloud.Sdk, Version=19.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\GroupDocs.Viewer-Cloud.19.4.0\lib\net20\GroupDocs.Viewer.Cloud.Sdk.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.10.0.1\lib\net40\Newtonsoft.Json.dll</HintPath>
@@ -81,6 +81,8 @@
     <Compile Include="Working_With_Storage\Viewer_CSharp_Object_Exists.cs" />
     <Compile Include="Working_With_Storage\Viewer_CSharp_Storage_Exist.cs" />
     <Compile Include="Working_With_Storage\Viewer_CSharp_Get_Disc_Usage.cs" />
+    <Compile Include="Working_With_View\Viewer_CSharp_Create_View_With_OutputPath.cs" />
+    <Compile Include="Working_With_View\Viewer_CSharp_Create_View_With_Responsive_HTML.cs" />
     <Compile Include="Working_With_View\Viewer_CSharp_Delete_View_With_Default_ViewFormat.cs" />
     <Compile Include="Working_With_View\Viewer_CSharp_Create_View_With_HTML_ViewOptions.cs" />
     <Compile Include="Working_With_View\Viewer_CSharp_Create_View_With_StartPage_And_CountPages.cs" />
