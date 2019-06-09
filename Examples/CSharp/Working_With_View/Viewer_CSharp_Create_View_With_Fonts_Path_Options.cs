@@ -12,7 +12,7 @@ namespace GroupDocs.Viewer.Cloud.Examples.CSharp
 		public static void Run()
 		{
 			var configuration = new Configuration(Common.MyAppSid, Common.MyAppKey);
-			var apiInstance = new ViewerApi(configuration);
+			var apiInstance = new ViewApi(configuration);
 
 			try
 			{
@@ -35,7 +35,7 @@ namespace GroupDocs.Viewer.Cloud.Examples.CSharp
 			}
 			catch (Exception e)
 			{
-				Console.WriteLine("Exception while calling ViewerApi: " + e.Message);
+				Console.WriteLine("Exception while calling ViewApi: " + e.Message);
 			}
 		}
 	}
