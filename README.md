@@ -9,11 +9,8 @@ This repository contains [Examples](Examples) projects for [GroupDocs.Viewer Clo
   <a title="Download complete GroupDocs.Viewer Cloud SDK Examples for .NET source code" href="https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-dotnet-samples/archive/master.zip">
 	<img src="https://raw.github.com/AsposeExamples/java-examples-dashboard/master/images/downloadZip-Button-Large.png" />
   </a>
- 
 </p>
-Directory | Description
---------- | -----------
-[Examples](Examples)  | A collection of .NET Cloud SDK examples that help you learn the product features
+
 
 ## How to use the SDK?
 The complete source code is available in this repository folder. You can either directly use it in your project via source code or get [NuGet distribution](https://www.nuget.org/packages/GroupDocs.Viewer-Cloud/) (recommended). For more details, please visit our [documentation website](https://docs.groupdocs.cloud/display/viewercloud/Available+SDKs).
