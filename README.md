@@ -10,6 +10,9 @@ This repository contains [Examples](Examples) projects for [GroupDocs.Viewer Clo
 	<img src="https://raw.github.com/AsposeExamples/java-examples-dashboard/master/images/downloadZip-Button-Large.png" />
   </a>
 </p>
+Directory | Description
+--------- | -----------
+[Examples](Examples)  | A collection of .NET Cloud SDK examples that help you learn the product features
 
 ## How to use the SDK?
 The complete source code is available in this repository folder. You can either directly use it in your project via source code or get [NuGet distribution](https://www.nuget.org/packages/GroupDocs.Viewer-Cloud/) (recommended). For more details, please visit our [documentation website](https://docs.groupdocs.cloud/display/viewercloud/Available+SDKs).
@@ -42,10 +45,6 @@ From within Visual Studio:
 - .NET Framework 2.0 or later
 - [Json.NET](https://www.nuget.org/packages/Newtonsoft.Json/)
 
-
-Directory | Description
---------- | -----------
-[Examples](Examples)  | A collection of .NET Cloud SDK examples that help you learn the product features
 
 ## Resources
 
