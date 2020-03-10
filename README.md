@@ -24,7 +24,8 @@ The package contains C# examples. Follow the given steps to proceed with project
 
 * Extract the downloaded project and open the solution file in Visual Studio
 * Right click on solution and press "Enable NuGet package Restore"
-* Build the project.
+* Edit RunExamples.cs and put appSid and appKey, obtained from https://dashboard.groupdocs.cloud there
+* Build and Run
 
 For more details, visit  [Getting Started](https://docs.groupdocs.cloud/display/viewercloud/Getting+Started).
 
