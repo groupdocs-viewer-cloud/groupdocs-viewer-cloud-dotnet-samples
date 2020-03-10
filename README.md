@@ -1,56 +1,42 @@
-## GroupDocs.Viewer Cloud SDK for .NET
+## GroupDocs.Viewer Cloud SDK for .NET Examples
+This repository contains [Examples](Examples) projects for [GroupDocs.Viewer Cloud SDK for .NET](https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-dotnet) to help you learn and write your own applications.
 
-[GroupDocs.Viewer Cloud SDK for .NET](https://products.groupdocs.cloud/viewer/net) has been developed to help you get started with using our document viewer REST API, allowing to seamlessly convert your documents to any format you need. With this single API, you can convert back and forth between over 50 types of documents and images, including all Microsoft Office and OpenDocument file formats, PDF documents, HTML, CAD, raster images and many more.
 
-This repository contains [Examples](Examples) projects for [GroupDocs.Viewer Cloud SDK for .NET](https://products.groupdocs.cloud/viewer/net) to help you learn and write your own applications.
+[GroupDocs.Viewer Cloud SDK for .NET](https://products.groupdocs.cloud/viewer/net) allows you to work with [GroupDocs.Viewer Cloud API](https://products.groupdocs.cloud/viewer) REST APIs in your .NET applications.
 
 <p align="center">
-
-  <a title="Download complete GroupDocs.Viewer Cloud SDK Examples for .NET source code" href="https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-dotnet-samples/archive/master.zip">
+  <a title="Download complete GroupDocs.Viewer Cloud SDK .NET Example source code" href="https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-dotnet-samples/archive/master.zip">
 	<img src="https://raw.github.com/AsposeExamples/java-examples-dashboard/master/images/downloadZip-Button-Large.png" />
   </a>
 </p>
 
+## Prerequisites
 
-## How to use the SDK?
-The complete source code is available in this repository folder. You can either directly use it in your project via source code or get [NuGet distribution](https://www.nuget.org/packages/GroupDocs.Viewer-Cloud/) (recommended). For more details, please visit our [documentation website](https://docs.groupdocs.cloud/display/viewercloud/Available+SDKs).
++ Visual Studio 2017 or Higher.
 
-### Prerequisites
++ GroupDocs.Viewer Cloud SDK for .NET.
 
-To use GroupDocs.Viewer Cloud .NET SDK you need to register an account with [GroupDocs Cloud](https://groupdocs.cloud) and lookup/create App Key and SID at [Cloud Dashboard](https://dashboard.groupdocs.cloud/#/apps). There is free quota available. For more details, see [GroupDocs Cloud Pricing](https://purchase.groupdocs.cloud/pricing).
++ Get your AppSID and AppKey at [https://dashboard.groupdocs.cloud](https://dashboard.groupdocs.cloud) (free registration is required).
 
-### Installation
+## How to Run the Examples?
 
-#### Install GroupDocs.Viewer Cloud via NuGet
+The package contains C# examples. Follow the given steps to proceed with project build:
 
-From the command line:
+* Extract the downloaded project and open the solution file in Visual Studio
+* Right click on solution and press "Enable NuGet package Restore"
+* Build the project.
 
-	nuget install GroupDocs.Viewer Cloud
+For more details, visit  [Getting Started](https://docs.groupdocs.cloud/display/viewercloud/Getting+Started).
 
-From Package Manager:
-
-	PM> Install-Package GroupDocs.Viewer Cloud
-
-From within Visual Studio:
-
-1. Open the Solution Explorer.
-2. Right-click on a project within your solution.
-3. Click on *Manage NuGet Packages...*
-4. Click on the *Browse* tab and search for "GroupDocs.Viewer Cloud".
-5. Click on the GroupDocs.Viewer Cloud package, select the appropriate version in the right-tab and click *Install*.
-
-## Dependencies
-- .NET Framework 2.0 or later
-- [Json.NET](https://www.nuget.org/packages/Newtonsoft.Json/)
-
-
-
+## Licensing
+All GroupDocs.Viewer Cloud SDKs are licensed under [MIT License](LICENSE).
 
 ## Resources
++ [**Website**](https://www.groupdocs.cloud)
++ [**Product Home**](https://products.groupdocs.cloud/viewer)
++ [**Documentation**](https://docs.groupdocs.cloud/display/viewercloud/Home)
++ [**Free Support Forum**](https://forum.groupdocs.cloud/c/viewer)
++ [**Blog**](https://blog.groupdocs.cloud/category/viewer)
 
-+ **Website:** [www.GroupDocs.cloud](http://www.GroupDocs.cloud)
-+ **Product Home:** [GroupDocs.Viewer Cloud SDK for .NET](https://products.groupdocs.cloud/viewer/net)
-+ **Download:** [Download GroupDocs.Viewer Cloud SDK for .NET](https://www.nuget.org/packages/GroupDocs.Viewer-Cloud/)
-+ **Documentation:** [GroupDocs.Viewer Cloud SDK Documentation](https://docs.groupdocs.cloud/display/viewercloud/Home)
-+ **Free Support:** [GroupDocs.Viewer Cloud SDK Free Support Forum](https://forum.groupdocs.cloud/c/viewer)
-+ **Blog:** [GroupDocs.Viewer Cloud SDK Blog](https://blog.groupdocs.cloud/category/viewer/)
+## Contact Us
+Your feedback is very important to us. Please feel free to contact us using our [Support Forums](https://forum.groupdocs.cloud/c/viewer).
