@@ -6,7 +6,7 @@ using GroupDocs.Viewer.Cloud.Sdk.Model.Requests;
 namespace GroupDocs.Viewer.Cloud.Examples.CSharp.AdvancedUsage.RenderingOptionsByFileType.RenderingArchiveFiles
 {
     /// <summary>
-    /// This example demonstrates how to print out archive contents
+    /// This example demonstrates how to render archive folder
     /// </summary>
     public class RenderArchiveFolder
     {
