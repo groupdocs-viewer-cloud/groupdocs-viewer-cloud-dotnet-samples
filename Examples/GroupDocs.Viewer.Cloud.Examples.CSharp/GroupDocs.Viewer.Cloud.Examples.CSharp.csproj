@@ -55,8 +55,8 @@
     <StartupObject>GroupDocs.Viewer.Cloud.Examples.CSharp.RunExamples</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="GroupDocs.Viewer.Cloud.Sdk, Version=20.3.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\GroupDocs.Viewer-Cloud.20.3.0-alpha-20200310015101\lib\net20\GroupDocs.Viewer.Cloud.Sdk.dll</HintPath>
+    <Reference Include="GroupDocs.Viewer.Cloud.Sdk, Version=20.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\GroupDocs.Viewer-Cloud.20.5.0\lib\net20\GroupDocs.Viewer.Cloud.Sdk.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
