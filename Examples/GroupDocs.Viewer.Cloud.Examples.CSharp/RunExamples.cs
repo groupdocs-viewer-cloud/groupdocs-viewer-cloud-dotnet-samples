@@ -24,9 +24,9 @@ namespace GroupDocs.Viewer.Cloud.Examples.CSharp
             ////          GroupDocs.Viewer Cloud API Examples
             //// ***********************************************************
 
-            //TODO: Get your AppSID and AppKey at https://dashboard.groupdocs.cloud (free registration is required).
-            Constants.MyAppSid = "XXXXX-XXXXX-XXXXX";
-            Constants.MyAppKey = "XXXXXXXXXX";
+            //TODO: Get your Client Id and Client Secret at https://dashboard.groupdocs.cloud (free registration is required).
+            Constants.MyClientId = "XXXXX-XXXXX-XXXXX";
+            Constants.MyClientSecret = "XXXXXXXXXX";
             Constants.MyStorage = "First Storage";
 
             // Uploading sample test files from local disk to cloud storage
