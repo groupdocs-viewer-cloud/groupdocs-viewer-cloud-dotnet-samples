@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using GroupDocs.Viewer.Cloud.Sdk.Api;
 using GroupDocs.Viewer.Cloud.Sdk.Model;
 using GroupDocs.Viewer.Cloud.Sdk.Model.Requests;
@@ -24,7 +25,7 @@ namespace GroupDocs.Viewer.Cloud.Examples.CSharp.BasicUsage.PdfViewer
                     ViewFormat = ViewOptions.ViewFormatEnum.PDF,
                     RenderOptions = new PdfOptions
                     {
-                        Permissions = PdfOptions.PermissionsEnum.DenyModification,
+                        Permissions = new List<string> { "DenyModification" },
                         PermissionsPassword = "p123",
                         DocumentOpenPassword = "o123"
                     }
