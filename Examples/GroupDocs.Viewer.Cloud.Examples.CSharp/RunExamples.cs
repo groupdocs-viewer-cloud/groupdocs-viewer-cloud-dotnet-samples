@@ -4,10 +4,13 @@ using GroupDocs.Viewer.Cloud.Examples.CSharp.AdvancedUsage.LoadingOptions;
 using GroupDocs.Viewer.Cloud.Examples.CSharp.AdvancedUsage.RenderingOptionsByFileType.RenderingArchiveFiles;
 using GroupDocs.Viewer.Cloud.Examples.CSharp.AdvancedUsage.RenderingOptionsByFileType.RenderingCadDrawings;
 using GroupDocs.Viewer.Cloud.Examples.CSharp.AdvancedUsage.RenderingOptionsByFileType.RenderingEmailMessages;
+using GroupDocs.Viewer.Cloud.Examples.CSharp.AdvancedUsage.RenderingOptionsByFileType.RenderingLotusNotesDatabase;
 using GroupDocs.Viewer.Cloud.Examples.CSharp.AdvancedUsage.RenderingOptionsByFileType.RenderingMsProjectDocuments;
 using GroupDocs.Viewer.Cloud.Examples.CSharp.AdvancedUsage.RenderingOptionsByFileType.RenderingOutlookDataFiles;
 using GroupDocs.Viewer.Cloud.Examples.CSharp.AdvancedUsage.RenderingOptionsByFileType.RenderingPdfDocuments;
 using GroupDocs.Viewer.Cloud.Examples.CSharp.AdvancedUsage.RenderingOptionsByFileType.RenderingSpreadsheets;
+using GroupDocs.Viewer.Cloud.Examples.CSharp.AdvancedUsage.RenderingOptionsByFileType.RenderingTextFiles;
+using GroupDocs.Viewer.Cloud.Examples.CSharp.AdvancedUsage.RenderingOptionsByFileType.RenderingVisioDocuments;
 using GroupDocs.Viewer.Cloud.Examples.CSharp.AdvancedUsage.RenderingOptionsByFileType.RenderingWordProcessingDocuments;
 using GroupDocs.Viewer.Cloud.Examples.CSharp.BasicUsage;
 using GroupDocs.Viewer.Cloud.Examples.CSharp.BasicUsage.HtmlViewer;
@@ -25,8 +28,8 @@ namespace GroupDocs.Viewer.Cloud.Examples.CSharp
             //// ***********************************************************
 
             //TODO: Get your Client Id and Client Secret at https://dashboard.groupdocs.cloud (free registration is required).
-            Constants.MyClientId = "XXXXX-XXXXX-XXXXX";
-            Constants.MyClientSecret = "XXXXXXXXXX";
+            Constants.MyClientId = "XXXX-XXXX-XXXX-XXXX";
+            Constants.MyClientSecret = "XXXXXXXXXXXXXXXX";
             Constants.MyStorage = "First Storage";
 
             // Uploading sample test files from local disk to cloud storage
@@ -91,6 +94,12 @@ namespace GroupDocs.Viewer.Cloud.Examples.CSharp
             SkipRenderingOfEmptyRows.Run();
             SplitWorksheetsIntoPages.Run();
             RenderTrackedChanges.Run();
+
+            SpecifyMaxCharsAndRows.Run();
+            RenderVisioDocumentFigures.Run();
+            FilterMailStorage.Run();
+            HtmlViewerLimitImageSize.Run();
+            HtmlViewerOptimizeForPrinting.Run();
             #endregion
 
             Console.WriteLine("Completed!");
