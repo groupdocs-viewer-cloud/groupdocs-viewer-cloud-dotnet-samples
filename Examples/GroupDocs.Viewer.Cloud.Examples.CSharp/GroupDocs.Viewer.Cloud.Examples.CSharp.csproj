@@ -13,7 +13,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="GroupDocs.Viewer-Cloud" Version="21.8.0-alpha-20210727003255" />
+    <PackageReference Include="GroupDocs.Viewer-Cloud" Version="21.10.0" />
   </ItemGroup>
 
 </Project>
