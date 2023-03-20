@@ -43,6 +43,8 @@ namespace GroupDocs.Viewer.Cloud.Examples.CSharp
 			var files = Directory.GetFiles(path, "*", SearchOption.AllDirectories);
 			foreach (var file in files)
 			{
+				Console.WriteLine("Uploading: " + Path.GetFileName(file));
+
 				var relativeFilePath = file.Replace(path, string.Empty).Trim(Path.DirectorySeparatorChar);
 
 				var response = storageApi.ObjectExists(new Sdk.Model.Requests.ObjectExistsRequest(relativeFilePath, MyStorage));

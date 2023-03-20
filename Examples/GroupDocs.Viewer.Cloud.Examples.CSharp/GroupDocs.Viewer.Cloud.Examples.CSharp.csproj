@@ -2,18 +2,17 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net461</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <Authors>GroupDocs</Authors>
     <Company>GroupDocs</Company>
-    <Description>Examples of using GroupDocs.Viewer.Cloud SDK
-</Description>
+    <Description>Examples of using GroupDocs.Viewer.Cloud SDK</Description>
     <Copyright>Aspose Pty Ltd</Copyright>
     <PackageProjectUrl>https://products.groupdocs.cloud/viewer/net</PackageProjectUrl>
     <RepositoryUrl>https://github.com/groupdocs-viewer-cloud/groupdocs-viewer-cloud-dotnet-samples</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="GroupDocs.Viewer-Cloud" Version="21.10.0" />
+    <PackageReference Include="GroupDocs.Viewer-Cloud" Version="23.3.0" />
   </ItemGroup>
 
 </Project>
