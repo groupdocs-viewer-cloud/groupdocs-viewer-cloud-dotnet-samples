@@ -24,7 +24,11 @@ namespace GroupDocs.Viewer.Cloud.Examples.CSharp.BasicUsage.PdfViewer
                     ViewFormat = ViewOptions.ViewFormatEnum.PDF,
                     RenderOptions = new PdfOptions
                     {
-                        JpgQuality = 50
+                        PdfOptimizationOptions = new PdfOptimizationOptions
+                        {
+                            CompressImages = true,
+                            ImageQuality = 50
+                        }
                     }
                 };
 
