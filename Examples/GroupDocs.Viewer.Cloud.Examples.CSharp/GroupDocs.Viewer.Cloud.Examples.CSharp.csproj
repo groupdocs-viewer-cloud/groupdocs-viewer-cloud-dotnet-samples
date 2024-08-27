@@ -12,7 +12,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="GroupDocs.Viewer-Cloud" Version="24.3.0" />
+    <PackageReference Include="GroupDocs.Viewer-Cloud" Version="24.8.0" />
   </ItemGroup>
 
 </Project>
