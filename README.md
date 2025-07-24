@@ -12,10 +12,8 @@ This repository contains [Examples](Examples) projects for [GroupDocs.Viewer Clo
 
 ## Prerequisites
 
-+ Visual Studio 2017 or Higher.
-
++ .NET SDK 6.0 or Higher
 + GroupDocs.Viewer Cloud SDK for .NET.
-
 + Get your Client Id and Client Secret at [https://dashboard.groupdocs.cloud](https://dashboard.groupdocs.cloud) (free registration is required).
 
 ## How to Run the Examples?
